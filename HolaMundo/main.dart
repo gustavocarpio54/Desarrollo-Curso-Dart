@@ -48,9 +48,29 @@ final fn = imprimeMensajeHola;
     return '$texto ${DateTime.now().weekday}'; 
   }); 
   fn((texto)=> '$texto Gustavo'); 
-var nombres = ['Gustavo', 'Alberto', 'Carpio', 'Santillan']; 
+var nombres = []; 
+print(nombres); 
+nombres.add('Gustavo'); 
+nombres.add('Carpio'); 
+nombres.addAll(['Gustavo', 'Samuel', 'Diego', 'Xavier', 'Gabriel']); 
+print(nombres); 
+nombres.removeAt(0); 
+nombres.removeAt(0); 
+nombres.remove('Gustavo'); 
+print(nombres); 
 
-
+var gente = <Persona>[
+  Persona('Gustavo'), Persona('Alberto')
+]; 
+print(gente);
+gente.remove('Gustavo'); 
+print(gente);
+var numeros =[0, 1, 2, 3, 4, 0]; 
+print(numeros); 
+numeros.removeWhere((number) => number == 0); 
+print(numeros); 
+numeros.clear(); 
+print(numeros); 
 }
 
 //FUNCION IMPRIMEMENSAJE
@@ -64,3 +84,14 @@ void imprimeMensajeHola(String Function(String Texto) callback){
   print(callback('Hola')); 
 }
 
+class Persona{
+  String nombre; 
+  Persona(this.nombre); 
+  
+  @override
+  String toString(){
+    return nombre; 
+  }
+
+
+} 
