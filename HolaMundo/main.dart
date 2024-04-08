@@ -1,5 +1,3 @@
-import 'main.dart';
-
 void main(){
   //hola
   var nombre = 'Gustavo'; 

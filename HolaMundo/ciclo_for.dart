@@ -6,9 +6,18 @@ void main(){
     'Julio Alberto'
   ]; 
   for(var i = 0; i <nombres.length; i++){
-  print(i)   ; 
+  print(i); 
   }
   for(final nombre in nombres){
     print(nombre); 
   }
+
+  final json = {
+  'nombre' : 'Gustavo'
+}; 
+json['nombre'] = 'Alberto'; 
+print(json);
+json['nombre'] = nombres[1]; 
+print(json); 
+
 }
