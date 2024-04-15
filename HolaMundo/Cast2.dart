@@ -2,12 +2,12 @@ void main(){
   final pet = getPet(); 
   if(pet.owner is Man){
     (pet.owner as Man).drive(); 
-
   }
 } 
 
-Pet getPet(){
-  return Dog(); 
+Pet getPet(){  
+  var x = Man(); 
+  return Dog(x);
 }
 
 abstract class Pet{
