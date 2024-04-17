@@ -1,6 +1,6 @@
 void main(){
 final circulo = Circulo.delDiametro(50); 
-
+print(circulo); 
 }
 
 class Circulo{

@@ -8,7 +8,7 @@ void ImprimeInfo(Persona persona){
 }
 class Cliente implements Persona{
   @override
- void ImprimeInfo() {
+ void ImprimeInfo(Persona persona) {
   print('informacion');
   }
 

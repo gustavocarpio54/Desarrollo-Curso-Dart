@@ -1,5 +1,3 @@
-import 'Cast.dart';
-
 void main(){
   final pets = [
     Pet('Lola', 5), 

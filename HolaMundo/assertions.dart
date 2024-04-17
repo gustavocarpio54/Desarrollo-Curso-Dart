@@ -1,10 +1,9 @@
-import 'main.dart';
 void main(){
   final user = Usuario(
     nombre: 'Gustavo', 
     email: 'gustavo@msn.com', 
     edad:  34);     
-    imprimirMensaje('');   
+    imprimirMensaje(user.email);   
    }
    void imprimirMensaje(String texto){
     assert(texto.isNotEmpty, 'texto invalido'); 

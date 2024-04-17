@@ -1,8 +1,6 @@
-import 'enum.dart';
-
 void main(){
   const user = User('Nombre', UserType.admin); 
-
+print(user.toString()); 
 }
 
 class User{

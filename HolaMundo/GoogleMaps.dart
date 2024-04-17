@@ -9,7 +9,7 @@ class GoogleMaps {
   final String Version; 
   final String _version;
   String get valorApiKey{
-    return '****${_apiKey.substring(_apiKey.length - 4, _apiKey.length)}';
+    return '****${_apiKey.substring(_apiKey.length - 4, _apiKey.length)} $_version';
   } 
   void getRout(){
     print('route $_apiKey');

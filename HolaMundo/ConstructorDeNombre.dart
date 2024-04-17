@@ -1,7 +1,6 @@
-import 'ConstructorDeFabrica.dart';
-
 void main(){
   const circulo = Circle.Diametro(50) ;
+  print(circulo); 
 }
 
 class Circle{
